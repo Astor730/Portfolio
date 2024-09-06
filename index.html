@@ -101,11 +101,9 @@
 
    			<div class="intro-info">
 
-   				<p class="lead">I’m a fifth year Northeastern student, completing my BS in computer science and game development. I’ve always been passionate 
-					about games and their design. In my time at Northeastern I have developed a deeper appreciation for  the medium and the work that it takes
-					to make a great game. The process of making games is incredibly fulfilling. I love the energy of collaboration, and how the interplay of 
-					ideas and feedback between my teammates and I results in unexpected creative solutions, unique experiences, and often, a beautiful end 
-					result. </p> 
+   				<p class="lead">I recently graduated from Northeastern, completing my BS in computer science and game development. I’ve always been passionate about games and their design. In my time at Northeastern 
+					I developed a deeper appreciation for  the medium and the work that it takes to make a great game. The process of making games is incredibly fulfilling. I love the energy of collaboration, and how 
+					the interplay of ideas and feedback between my teammates and I results in unexpected creative solutions, unique experiences, and often, a beautiful end result.</p> 
    			</div>   			
 
    		</div>   		
@@ -151,7 +149,7 @@
 	                     	<div class="folio-item-cell">
 		     					       <h3 class="folio-title">Sight and Noise</h3>	     					    
 		     					    	 <span class="folio-types">
-		     					       	  Co-op Dungeon Crawler
+		     					       	  Co-op Maze solver
 		     					       </span>
 		     					   </div>	                      	
 	                     </div>                    
@@ -217,16 +215,19 @@
 
 					   <div class="description-box">
 					      <h4>Sight and Noise</h4>		      
-					      <p>Description: This is a co-op game where two players have to find their way out of a maze. One player can only see what’s 
-							happening in the maze, while the other player can only hear different aspects of the environment.</p>
-						 <p>What I did: I mostly worked on balancing between the hearing player and the seeing player. This included making the hearing player more 
-							self sufficient by giving them an audio que when they are hitting a wall. I also conceptualized and implemented the hearing player
-							having the ability to hear the exit. This made the seeing player more reliant on the hearing player to find the exit. I also made
-							the monsters in the maze more dangerous so that the hearing player was neccessary to avoid the monsters. A lot of the changes
-							happened after running playtests which I also helped faciliate and organize the feedback for. 
+					      <p>Description: This is a co-op game where players try to escape a monster infested maze. 
+							One player can only see the game world and the other player can only hear elements of the game.</p>
+						 <p>My deisgn challenge: I was tasked with balancing player satisfaction between the hearing and seeing player. mostly worked on balancing between the hearing player and the 
+							seeing player. Early on in the game’s development the seeing player was a lot more fun to play than the hearing player because audio wasn’t integral to complete the maze. 
+							This led to the seeing player often abandoning the hearing player and the hearing player feeling useless. One change I designed and coded was giving the hearing player an 
+							audio cue when they hit a wall thus making it easier to navigate on their own. Another change I designed and coded was giving the hearing player the ability to hear the exit 
+							to make the seeing player more reliant on the hearing player. My final change was to increase the threat of the monsters by making them too fast to run from. Early on the seeing
+							player could just see where the monster was and easily avoid them even though that was supposed to be the hearing player’s job. By making the monster faster, players would 
+							have to avoid where the monsters were instead of running away from them, meaning the hearing player’s ability to hear the direction of the monsters was more valuable. 
+							The seeing player couldn’t navigate the maze on their own without having a high risk of being caught. 
 						  </p>
 
-					      <div class="categories">Co-op dungeon crawler</div>			               
+					      <div class="categories">Co-op Maze Solver</div>			               
 					   </div>
 
 			         <div class="link-box">
@@ -243,15 +244,14 @@
 
 					   <div class="description-box">
 					      <h4>Escape Veloctiy</h4>
-						  <p>Description: This is a 3d puzzle game where the player has to navigate through a spaceship solving puzzles and defeating enemies. 
-							 The main tool the player has to solve these puzzles is their ability to switch gravity. They can use this ability to dodge 
-							 obstacles, access buttons and find new paths.</p>		      
-					      <p>The main mechanic is the player's ability to switch gravity. The game area is a space ship so there are many tight corridors and 
-							small spaces. In this space there are enemies that need to be defeated and puzzles to solve.
-							I worked in a lot of different areas for this project. I did most of the model importing, animation and particle effects and physics. 
-							Along with this was working on the physics for all these objects and the player. It was a bit challenging because of the gravity 
-							switching mechanic, the player controller had to work under two different modes of gravity. There were special interactions
-							on the ship such as buttons and trapped that I implemented.
+						  <p>Description: This is a 3d puzzle game where the player has to navigate through a spaceship. The puzzles are built around the player’s ability to switch gravity. 
+							They use this ability to find new paths and buttons or get around obstacles. </p>		      
+					      <p>My design and coding challenges: The gravity switching ability was not an easy ability to code. To make sure that the player controls upside down and right side
+							up I had to track the gravity state of the character and inverse the vector modification based on that state. The game objects also had to have independent physics 
+							so that the gravity switching didn’t apply to them, which meant I couldn’t use the default collisions in Unity. I had to code all the collision states and interactions.
+							My other challenge was adding some level of polish to the game. So I added some particle effects to the drone explosions, to the player’s gun and button presses. 
+							I found some free models I could use for the boss and the drones. There were some animations that came with the boss model so I rigged those animations as well to
+							make the boss fight feel more immersive. I added some spaceship textures to the walls to give the puzzles more life.
 						  </p>
 
 					      <div class="categories">3d Shooter Puzzle Game</div>			               
@@ -271,16 +271,15 @@
 
 					   <div class="description-box">
 					      <h4>Underworld's Pursuit</h4>		 
-						  <p>Description: This is a 2D action platformer boss rush. The player uses their gun and other abilities to defeat each boss and move on.
-							New abilities are required after every boss is defeated.</p>     
-					      <p>What I did: I worked on the implementation of the player abilities, the menus and running playtests. The player abilities, which
-							included a dash and a reflect, were  very physics heavy because we wanted the game to be very technical and precise, therefore I 
-							didn't use the built in unity physics to implement them. There were also a lot of design decisions that had to be made around the
-							reflect and other challenges that arose from how our projectiles were coded. The menus required a game manager as well to handle 
-							linking the scene transitions and the levels. 
+						  <p>Description:  Underworld’s Pursuit is a 2D action platformer boss rush. The player uses their gun and other abilities to defeat the boss.</p>     
+					      <p>My coding challenge: I was in charge of coding the player physics. The main challenge here was making the dash work how we wanted. Temporarily 
+							turning off the player’s gravity and applying an impulse to the player didn’t work, so I decided not to use Unity’s built in physics to allow for more
+							control. What I ended up doing was having the player move along a straight vector in the direction of their last input and no other movement functions would 
+							run during this time to prevent the player from falling. While the player wasn’t dashing I could check for jumps or double jumps and apply gravity forces. 
+							Applying an impulse to the player worked for the jump because it allowed gravity to be applied after and created an expected jump behavior. 
 						  </p>
 
-					      <div class="categories">Monster Battler rouge like</div>			               
+					      <div class="categories">2d Action Platformer</div>			               
 					   </div>
 
 			         <div class="link-box">
@@ -298,17 +297,14 @@
 					   <div class="description-box">
 					      <h4>Dream Beast</h4>
 						  <p>
-							Description: This is a pokemon roguelike. The player enters a dream world every night where they can battle and capture dreambeats.
+							Description: Dream beast is a pokemon roguelike. The player enters a dream world where they can battle and capture dreambeats. 
 							The dream beasts are corrupted animals that have taken obscure forms.
 						  </p>	      
-					      <p>What I did: I worked on concepting dream beasts and skills as well as implementing the skill animations. We had different classes 
-							of DreamBeasts, so I had to conceive different types of beasts for each class. Each of them had to have a distinct identity and 
-							understandable concept for our artist to actually draw. They also had to have a set of base stats that fit along their own theme as
-							well as their class. While I didn’t create  the animations from scratch, I did alter  pre-made particle systems or sprite 
-							animations and changed  them to fit specific skills. I also had to make the animations and particle systems work with the battle
-							system. This required a lot of research into the Unity animation system, animation clips, animation events and functions for 
-							initiating  those events.
-							
+					      <p>My coding challenge: I worked on data persistence throughout the dreamworld. Because we wanted a dungeon type of gameplay loop all of the player’s and dream beast 
+							data had to persist between the map and each battle. So I created a container class for the player data instead of a static class so that data could be stored in
+							more than methods. This class had a special method so it wouldn’t be destroyed when a new scene loaded and had a list of the player’s dream beasts that they chose 
+							in the starting area as well as their position on the map. I also was tasked with adding battle animations. I found some particle animations and imported them 
+							our project. Then added them into the battle system by instantiating the particle system as a game object when the move was triggered in the battle system.
 						  </p>
 
 					      <div class="categories">Monster Battler Rouge Like</div>			               
