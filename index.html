@@ -114,7 +114,7 @@
 
    	<div class="row button-section">
    		<div class="col-twelve">
-   			<a href="images/Games Resume Fall 2024.pdf" title="Download CV" class="button button-primary">Download CV</a>
+   			<a href="images/Games Resume Winter 2025.pdf" title="Download CV" class="button button-primary">Download CV</a>
 
    		</div>   		
    	</div>
@@ -143,13 +143,13 @@
 
 	         	<div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src="images/portfolio/Sight and Noies Gif.gif" alt="Sight and Noise">
+	               	<img src="images/portfolio/What Remains Of Me Gameplay.gif" alt="What Remains of Me">
 	                  <a href="#modal-01" class="overlay">	                  	           
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Sight and Noise</h3>	     					    
+		     					       <h3 class="folio-title">What remains of me</h3>	     					    
 		     					    	 <span class="folio-types">
-		     					       	  Cooperative Maze solver
+		     					       	  Single Player Puzzle Platformer
 		     					       </span>
 		     					   </div>	                      	
 	                     </div>                    
@@ -210,22 +210,28 @@
 	            <div id="modal-01" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src="images/portfolio/Sight and Noise Code.jpg" alt="" />
+				     		<img src="images/portfolio/What Remains Of Me Gameplay.gif" alt="" />
 				     	</div>      	
 
 					   <div class="description-box">
-					      <h4>Sight and Noise</h4>    
-					      <p>Description: An Co-op where players try to escape a maze full of monsters. One player can only see, and other can only hear!</p>
+					      <h4>What Remains of Me</h4>    
+					      <p>Description: A Single Player game Where the player escapes a warehouse with nothing but their trusty grappling hook.</p>
 						  <p>Engine: Unity</p>
-						  <p>Team Size: 6</p>
-						  <p>Project timeline: 2 months</p>
-						  <p>My role: Technical Designer</p>
+						  <p>Team Size: 19</p>
+						  <p>Project timeline: 4 Months</p>
+						  <p>My role: Gameplay Programmer</p>
 						  <p>My Work:
-							<p>-Used the Unity audio engine to deisgn and implement a more robust audio system for the hearing player, to make it easier for them to navigate the maze.</p>
-							<p>-Brought up hearing player satisfaction between so both players were equally needed to complete a maze.</p>
-							<p>-Balanced monster variables to make them more challenging, encouraging the players to work together to avoid the monsters.</p>
-							<p>-Organized and assigned tasks with Google Sheets, Used github to implement those tasks.</p></p>
-					      <div class="categories">Co-op Maze Solver</div>			               
+							<p>-Implemented collision physics for the player's grappling hook. This included added a collider to the hook so it would bounce off of walls and ceilings as well as check the wire for collisions so it wouldn't go through walls and platforms.</p>
+							<p>-Scripted a new battery that could gain or lose energy without the input of the player. I also coded an effects script that would display a custom effect based on whether the battery was gaining or losing energy.</p>
+							<p>-Coupled a particle system with the player's drain and charge ability to play a particle effect when the player is using their ability.</p>
+							<p>-Fixed a number of outstanding bugs including fixing the battery display to and stopping the player's velocity on death to fix uninteded checkpoint jumps.</p>
+							<p>-Utilized Jira to create and keep track of tasks with my team memebers.</p>
+							<p>Link to some of the files that I worked on: <a href="https://github.com/Games-at-Northeastern/What-Remains-of-Me/blob/cdb0e58/Assets/Scripts/Wire/Plug%20Movement/WireThrower.cs#L687-L741">Sparks</a>
+																		   <a href="https://github.com/Games-at-Northeastern/What-Remains-of-Me/blob/a5a7bf2/Assets/Scripts/Wire/IControllable/AControllable.cs#L52-L187">Create and Destroy Energy</a>
+																		   <a href="https://github.com/Games-at-Northeastern/What-Remains-of-Me/blob/7639376/Assets/Scripts/Wire/IControllable/RechargeLeakBatteryPack.cs ">Create and Destroy Energy</a>
+																		   <a href="https://github.com/Games-at-Northeastern/What-Remains-of-Me/blob/cdb0e58/Assets/Scripts/Wire/Plug%20Movement/WireThrower.cs#L202-L228">Physics</a>
+																		   <a href="https://github.com/Games-at-Northeastern/What-Remains-of-Me/blob/d932954/Assets/Visuals/UI/OutletFillMeter/OutletMeter.cs#L134-L188">display bug fixing</a></p></p>
+					      <div class="categories">Single Player Platformer</div>			               
 					   </div>
 
 			         <div class="link-box">
@@ -237,7 +243,7 @@
 				   <div id="modal-02" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src="images/portfolio/Escape velocity code.jpg" alt="" />
+				     		<img src="images/portfolio/Escape-Velocity-Profile.JPG" alt="" />
 				     	</div>      	
 
 					   <div class="description-box">
@@ -246,12 +252,16 @@
 						  <p>Engine: Unity</p>
 						  <p>Team Size: 3</p>
 						  <p>Project timeline: 2 months</p>
-						  <p>My role: Programmer</p>
+						  <p>My role: Gameplay Engineer</p>
 						  <p>My Work:
-							<p>-Implemented a custom gravity system affecting the player controller and physics</p>
-							<p>-Coded independent physics for game objects</p>
+							<p>-Implemented a custom player controller that could handle player movement on the floor and the ceiling.</p>
+							<p>-Coded the player's ability to shoot and destroy drones.</p>
 							<p>-Animation and VFX work including particel effects, model rigging and boss fight animations</p>
-							<p>-Developed a custom collision detection system</p></p>
+							<p>-Coded the ai for the boss. This included making a finite state machine with an attack, patrol, chase and death state.</p>
+							<p>Link to some of the files that I worked on: <a href="https://github.com/Astor730/EscapeVelocity/blob/47b3802/Assets/Scripts/EnemyAi2.cs">Enemy ai</a>
+																		<a href="https://github.com/Astor730/EscapeVelocity/blob/969a7a8/Assets/Scripts/DroneBehavior.cs">Drone behavior</a>
+																		<a href="https://github.com/Astor730/EscapeVelocity/blob/47b3802/Assets/Scripts/Shooting.cs">Shooting mechanic</a>
+																		<a href="https://github.com/Astor730/EscapeVelocity/blob/5341a2c/Assets/Scripts/PlayerMovement.cs">Player controllr</a></p></p>
 					      <div class="categories">3d Shooter Puzzle Game</div>			               
 					   </div>
 
@@ -264,7 +274,7 @@
 				   <div id="modal-03" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src="images/portfolio/Underworld's Pursuit Code.jpg" alt="" />
+				     		<img src="images/portfolio/Underworld's Pursuit Gameplay Gif.gif" alt="" />
 				     	</div>      	
 
 					   <div class="description-box">
@@ -275,9 +285,14 @@
 						  <p>Project timeline: 3 months</p>
 						  <p>My role: Programmer, Artist</p>
 						  <p>My Work:
-							<p>-Coded the players physics and controller, including their jump, dash and shooting abilities</p>
-							<p>-Coded the menus and scene transitions</p>
-							<p>-Wrote and implemented the music. Had different parts of the sound track play in different areas of the game, and a custom effect when the player died.</p></p>
+							<p>-Aided in the implementaiton of custom physics to allow the player to move, shoot, jupm and dash smoothly.</p>
+							<p>-Implemented the dash by turning off the simulated gravity and moving them to a point a set horizontal distance in the direction of the player's last input.</p>
+							<p>-Coded the game manager that handles level and scene transitions as well as the game state during gameplay.</p>
+							<p>-Wrote and implemented the music. Had different parts of the sound track play in different areas of the game, and a custom effect when the player died.</p>
+							<p>Link to some of the files that I worked on: <a href="https://github.com/nolem3/underworlds-pursuit/blob/fca60a7/Assets/GameManager.cs">Game manager</a>
+																		<a href="https://github.com/nolem3/underworlds-pursuit/blob/c978d84/Assets/Scripts/HandleMusic.cs">Handle music</a>
+																		<a href="https://github.com/nolem3/underworlds-pursuit/blob/89f55c3/Assets/Scripts/PlayerAttack.cs">Shooting mechanic</a>
+																		<a href="https://github.com/nolem3/underworlds-pursuit/blob/9cd8f96/Assets/Scripts/PlayerMove.cs">Player controller</a></p></p>
 					      <div class="categories">2d Action Platformer</div>			               
 					   </div>
 
@@ -290,7 +305,7 @@
 				   <div id="modal-04" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src="images/portfolio/Dreambeast Code.jpg" alt="" />
+				     		<img src="images/portfolio/Dreambeast Gameplay Gif.gif" alt="" />
 				     	</div>      	
 
 					   <div class="description-box">
@@ -300,12 +315,16 @@
 						  <p>Team Size: 4</p>
 						  <p>Project timeline: 3 months</p>
 						  <p>My role: Programmer, Deisgner</p>
-						  <p>My Work: 
-							<p>-Conceptualized dreambeasts to be drawn by our artist and have their stats implemented.</p>
-							<p>-Designed and implemented moves that dreambeasts can use to create a complex battle system.</p>
-							<p>-Implemented dreambeasts in Engine with their stats, class and specific moves.</p>
-							<p>-Coded player data persistance during the transitions between the map and the battles. </p>
-							<p>-Found and implemented particle animations to play during moves triggered in the battle system.</p></p>
+						  <p>My Work:
+							<p>-Implemented attacks that could effect health, modify stats or provide status effects such as dots or slows.</p>
+							<p>-Designed and Implemented dreambeasts in Engine with their stats, class and specific moves.</p>
+							<p>-Coded player data persistance during transitions between battles and the map by reading and writing data to files.</p>
+							<p>-Added color scheming to the turn visualizer to help the player know the upcoming sequence of beasts who could move and plan accordingly.</p>
+							<p>-Found and implemented particle animations to play during moves triggered in the battle system.</p>
+							<p>Link to some of the files that I worked on: <a href="https://github.com/zljtt/dreambeast/blob/8d44851/Assets/DreamBeast/Scripts/Player/PlayerMovement.cs">Player Movement</a>
+																		<a href="https://github.com/zljtt/dreambeast/blob/bc02fed/Assets/Resources/DreamBeasts/InstantiateParticleSystem.cs">Battle Animations</a>
+																		<a href="https://github.com/zljtt/dreambeast/blob/b4a7211/Assets/DreamBeast/Scripts/Combat/UI/TurnVisualizer.cs">Turn Visualizer</a>
+																		<a href="https://github.com/zljtt/dreambeast/blob/8d44851/Assets/DreamBeast/Scripts/Dream/Worldgen/MapManager.cs">Map Manager</a></p></p>
 					      <div class="categories">Monster Battler Rouge Like</div>			               
 					   </div>
 
@@ -440,7 +459,7 @@
 
    			<h5>Email Me At</h5>
 
-   			<p>meredithgoujon.a@northeastern.edu<br>     
+   			<p>astormg999@gmail.com<br>     
 			   </p>
 
    		</div>
